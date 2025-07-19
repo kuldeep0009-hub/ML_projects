@@ -1,5 +1,6 @@
 import sys
 import pandas as pd
+import os
 from src.exception import CustomException
 from src.utils import load_object
 
@@ -24,7 +25,7 @@ class PredictPipeline:
             raise CustomException(e,sys)
 
 
-
+##this is used to mapping all my inuts to our backend
 class CustomData:
     def __init__(  self,
         gender: str,
@@ -48,6 +49,9 @@ class CustomData:
         self.reading_score = reading_score
 
         self.writing_score = writing_score
+
+
+#this will return our data into dataframe dictionary me output milega then usko pandas ki help se row column me krlenge
 
     def get_data_as_data_frame(self):
         try:

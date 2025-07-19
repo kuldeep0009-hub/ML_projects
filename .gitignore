@@ -5,7 +5,11 @@ __pycache__/
 
 # C extensions
 *.so
-
+.ebextensions/
+.github/
+templates/
+.DS_Store/
+app.py/
 # Distribution / packaging
 .Python
 build/

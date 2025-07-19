@@ -112,7 +112,7 @@ class ModelTrainer:
             return r2_square
             
 
-
+ 
 
             
         except Exception as e:
